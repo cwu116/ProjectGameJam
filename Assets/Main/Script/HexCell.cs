@@ -13,7 +13,7 @@ public class HexCell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canPutBranchIn = true;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
