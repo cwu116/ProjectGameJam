@@ -7,10 +7,15 @@ public class RootRotate : MonoBehaviour
 {
     public Transform root;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
+        
         GetComponent<Button>().onClick.AddListener(RotateSixty);
+        
+
     }
 
     void RotateSixty()
