@@ -155,10 +155,14 @@ MonoBehaviour:
   width: 6
   height: 16
   cellPrefabList:
-  - {fileID: 7475706521498086620, guid: 24bee63c87c58d14b9a93255e137b7ba, type: 3}
-  - {fileID: 6197520912281834684, guid: 15dd195a178d47440a687da50b700fe1, type: 3}
-  - {fileID: 964398594801310487, guid: b0a0741754cf3f941b92ca7cf2d1f677, type: 3}
-  - {fileID: 8184593395217546498, guid: da23c08b8e4154441baac4be7bab45de, type: 3}
+  - {fileID: 2122479721059792033, guid: 76791464c9e9a0b4b8d1a01147105dd0, type: 3}
+  - {fileID: 1871997751811627545, guid: 5c581c522f062c945aa8920d138cebca, type: 3}
+  - {fileID: 2367353650674954180, guid: 12d43d3b8a734d147ad388ccd4f755a7, type: 3}
+  - {fileID: 8767381263615265700, guid: b441ed1fc4010464d870366aad982165, type: 3}
+  - {fileID: 2487142272771192007, guid: f46f87ba52fa3574cb4db04ed3120ba2, type: 3}
+  - {fileID: 591501359663912849, guid: 1cd6dc5bc1738be46be44afe633a8fa5, type: 3}
+  - {fileID: 6606334728075273743, guid: 89c5bc727c469aa46b2505b5c410fd88, type: 3}
+  - {fileID: 4130095105529319679, guid: 975b023941d485e41bf51baf85df9d61, type: 3}
   cellWeight:
   - 70
   - 15
