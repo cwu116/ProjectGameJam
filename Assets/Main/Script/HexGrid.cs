@@ -6,12 +6,15 @@ using UnityEngine.UI;
 
 public class HexGrid : MonoBehaviour
 {
-    public int width = 6;
     public int height = 6;
+    public int width = 6;
 
     public HexCell[] cellPrefabList;
     public float[] cellWeight;
+
     public GameObject EmptySpaceCell;
+    public int EmptySpaceCellWidth;
+    public int EmptySpaceCellHeight;
     HexCell[] cells;
     
     // Start is called before the first frame update
@@ -29,10 +32,10 @@ public class HexGrid : MonoBehaviour
 
     private void CreateCells()
     {
-        cells = new HexCell[height * width];
-        for (int z = 0, i = 0; z < height; z++)
+        cells = new HexCell[width * height];
+        for (int z = 0, i = 0; z < width; z++)
         {
-            for (int x = 0; x < width; x++)
+            for (int x = 0; x < height; x++)
             {
                 CreateOneCell(x, z, i++);
             }
@@ -79,10 +82,10 @@ public class HexGrid : MonoBehaviour
 
     void CreateEmptySpaceCell()
     {
-        int rand = Random.Range(0, cells.Length);
+        int index = (EmptySpaceCellWidth) * height + EmptySpaceCellHeight;
         GameObject Emptycell = Instantiate<GameObject>(EmptySpaceCell);
         Emptycell.transform.SetParent(transform, false);
-        Emptycell.transform.position = cells[rand].transform.position;
+        Emptycell.transform.position = cells[index].transform.position;
     }
 
 }
