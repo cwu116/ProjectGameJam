@@ -7,7 +7,7 @@ public class RootState : MonoBehaviour
 {
     [SerializeField] Sprite root1;
     [SerializeField] Sprite root2;
-    [SerializeField] GameObject rootContainer;
+    //[SerializeField] GameObject rootContainer;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +27,12 @@ public class RootState : MonoBehaviour
         float i = Random.Range(0f, 1f);
         if (i < 0.6f)
         {
-            rootContainer.GetComponent<Image>().sprite = root1;
+            GetComponent<Image>().sprite = root1;
             return true;
         }
         else
         {
-            rootContainer.GetComponent<Image>().sprite = root2;
+            GetComponent<Image>().sprite = root2;
             return false;
         }
     }
