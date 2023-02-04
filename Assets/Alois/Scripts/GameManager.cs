@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<EnergyManager>().InitEnergyCount();
+
         energy = 5;
         steps = 0;
         hasHope = false;
