@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a3ffe3f2e911f44aa244bcaf72d5dcd, type: 3}
-  m_Name: Virus
+  m_Name: Virus4
   m_EditorClassIdentifier: 
-  terrainName: virus
-  energy: -2
+  terrainName: virus4
+  energy: -4
   isHope: 0
   isRock: 0
   hexPrefab: {fileID: 0}
