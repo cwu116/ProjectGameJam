@@ -37,20 +37,35 @@ public class Branch : MonoBehaviour,
     private void OnTriggerStay2D(Collider2D collision)
     {
         isInTrigger = true;
-        if (collision.CompareTag("Rock") && isMouseUp )
+        if ((collision.CompareTag("mud") ||
+            collision.CompareTag("water2") ||
+            collision.CompareTag("water3") ||
+            collision.CompareTag("water4") ||
+            collision.CompareTag("virus2") ||
+            collision.CompareTag("virus3") ||
+            collision.CompareTag("virus4") ||
+            collision.CompareTag("rock") ||
+            collision.CompareTag("hope") )
+            && isMouseUp )
         {
             HexCell cell = collision.GetComponent<HexCell>();
             if (cell.canPutBranchIn)
             {
-                this.gameObject.SetActive(false);
+                
                 transform.position = originPos;
-                GameObject branch = Instantiate<GameObject>(branchmanager.branchlist[branchindex]);
+                GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchindex]);
                 branch.transform.position = collision.transform.position;
+                branchmanager.CreateNewBranch(branchindex);
+                GameObject.Destroy(this.gameObject);
             }
             else
             {
                 transform.position = originPos;
             }
+        }
+        else if(isMouseUp)
+        {
+            transform.position = originPos;
         }
 
     }
