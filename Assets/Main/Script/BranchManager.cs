@@ -29,7 +29,8 @@ public class BranchManager : MonoBehaviour
         uiBranch .branchUIindex = branchindex;
         uiBranch.transform.SetParent(branchUIPos[branchindex]);
         uiBranch.transform.position = branchUIPos[branchindex].position;
-        uiBranch.transform.localScale = branchUIPos[branchindex].localScale;
+        Vector3 temp = branchUIPos[branchindex].localScale;
+        uiBranch.transform.localScale = new Vector3(temp.x, temp.y * 2, temp.z);
 
     }
 
