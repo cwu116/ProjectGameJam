@@ -22,36 +22,43 @@ public class TerrainCheck : MonoBehaviour
         if (other.tag == "mud")
         {
             GameManager.instance.energy--;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "water2")
         {
             GameManager.instance.energy += 2;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "water3")
         {
             GameManager.instance.energy += 3;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "water4")
         {
             GameManager.instance.energy += 4;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "virus2")
         {
             GameManager.instance.energy -= 2;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "virus3")
         {
             GameManager.instance.energy -= 3;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "virus4")
         {
             GameManager.instance.energy -= 4;
+            GameManager.instance.steps++;
         }
 
         if (other.tag == "rock")
@@ -59,6 +66,7 @@ public class TerrainCheck : MonoBehaviour
             if (GameManager.instance.hasHope)
             {
                 Debug.Log("break rock");
+                GameManager.instance.steps++;
             }
             else
             {
@@ -69,6 +77,8 @@ public class TerrainCheck : MonoBehaviour
         if (other.tag == "hope")
         {
             GameManager.instance.hasHope = true;
+            GameManager.instance.steps++;
+            GameManager.instance.hopeStartStep = GameManager.instance.steps;
         }
     }
 }

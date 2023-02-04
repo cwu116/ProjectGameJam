@@ -155,10 +155,10 @@ MonoBehaviour:
   width: 6
   height: 16
   cellPrefabList:
-  - {fileID: 7475706521498086620, guid: 24bee63c87c58d14b9a93255e137b7ba, type: 3}
-  - {fileID: 6197520912281834684, guid: 15dd195a178d47440a687da50b700fe1, type: 3}
-  - {fileID: 964398594801310487, guid: b0a0741754cf3f941b92ca7cf2d1f677, type: 3}
-  - {fileID: 8184593395217546498, guid: da23c08b8e4154441baac4be7bab45de, type: 3}
+  - {fileID: 1871997751811627545, guid: 5c581c522f062c945aa8920d138cebca, type: 3}
+  - {fileID: 1871997751811627545, guid: 5c581c522f062c945aa8920d138cebca, type: 3}
+  - {fileID: 1871997751811627545, guid: 5c581c522f062c945aa8920d138cebca, type: 3}
+  - {fileID: 1871997751811627545, guid: 5c581c522f062c945aa8920d138cebca, type: 3}
   cellWeight:
   - 70
   - 15

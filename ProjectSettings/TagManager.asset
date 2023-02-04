@@ -6,6 +6,14 @@ TagManager:
   tags:
   - EmptySpace
   - mud
+  - water2
+  - water3
+  - water4
+  - virus2
+  - virus3
+  - virus4
+  - rock
+  - hope
   layers:
   - Default
   - TransparentFX
