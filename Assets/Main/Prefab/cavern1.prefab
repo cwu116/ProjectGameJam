@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &2989346145220879451
 MeshRenderer:
@@ -251,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &8833468766848848788
 MeshRenderer:
@@ -470,6 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &6084503197925377963
 MeshRenderer:
@@ -756,6 +759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &4224227509802223493
 MeshRenderer:
@@ -958,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &4656571056665330994
 MeshRenderer:
@@ -1076,6 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &6021128397942032792
 MeshRenderer:
@@ -1617,6 +1623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &2379729415070490149
 MeshRenderer:
@@ -1819,6 +1826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &6379024007209231535
 MeshRenderer:
@@ -1937,6 +1945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &7415166329999984525
 MeshRenderer:
@@ -3824,6 +3833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &8779186634180479380
 MeshRenderer:
@@ -4449,6 +4459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &5000163190474377512
 MeshRenderer:
@@ -4965,8 +4976,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5959869157793467566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.63755, y: -13.443352, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -36.4, y: -12.4, z: 0}
+  m_LocalScale: {x: 0.96, y: 0.96, z: 0.96}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6359850076852915217}
@@ -5039,6 +5050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &2887800340733476932
 MeshRenderer:
@@ -5157,6 +5169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &3679229415928484819
 MeshRenderer:
@@ -5275,6 +5288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &888650621308868544
 MeshRenderer:
@@ -5989,6 +6003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &1134834747878819692
 MeshRenderer:
@@ -6888,6 +6903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &615803281636739839
 MeshRenderer:
@@ -7328,6 +7344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &3811743919914720530
 MeshRenderer:
@@ -7446,6 +7463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &688477783266883395
 MeshRenderer:

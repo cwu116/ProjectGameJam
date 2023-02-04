@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
         if(energy == 0)
         {
-
+            Debug.Log("game over");
         }
     }
 

@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 2367353650339936418}
   - component: {fileID: 2367353650339936419}
   m_Layer: 0
-  m_Name: HexTile_Sheet_1A_3
+  m_Name: hexBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6eff2ead5c23d624c9733e004cff1d88, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6313726}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -355,6 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curPos: {x: 0, y: 0}
+  canPutBranchIn: 1
   weight: 20
 --- !u!23 &2367353650674954183
 MeshRenderer:
