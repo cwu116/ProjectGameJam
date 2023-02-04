@@ -5,9 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - EmptySpace
-  - Branch
-  - Rock
-  - BranchUI
+  - mud
+  - water2
+  - water3
+  - water4
+  - virus2
+  - virus3
+  - virus4
+  - rock
+  - hope
   layers:
   - Default
   - TransparentFX
