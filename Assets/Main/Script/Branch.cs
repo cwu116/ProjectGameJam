@@ -16,7 +16,8 @@ public class Branch : MonoBehaviour,
     bool isMouseUp;
     bool isInTrigger;
 
-    public int branchindex;
+    [HideInInspector]public int branchUIindex;
+    public int branchIndex;
 
     void Start()
     {
@@ -54,9 +55,9 @@ public class Branch : MonoBehaviour,
             {
                 
                 transform.position = originPos;
-                GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchindex]);
+                GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchIndex]);
                 branch.transform.position = collision.transform.position;
-                branchmanager.CreateNewBranch(branchindex);
+                branchmanager.CreateNewBranch(branchUIindex);
                 GameObject.Destroy(this.gameObject);
             }
             else

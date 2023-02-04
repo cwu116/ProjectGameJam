@@ -26,7 +26,7 @@ public class BranchManager : MonoBehaviour
     {
         int rand = Random.Range(0, 4);
         Branch uiBranch = Instantiate<Branch>(branchUIList[rand]);
-        uiBranch .branchindex = branchindex;
+        uiBranch .branchUIindex = branchindex;
         uiBranch.transform.SetParent(branchUIPos[branchindex]);
         uiBranch.transform.position = branchUIPos[branchindex].position;
         uiBranch.transform.localScale = branchUIPos[branchindex].localScale;

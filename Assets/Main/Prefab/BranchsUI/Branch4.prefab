@@ -94,7 +94,8 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   originPos: {x: 0, y: 0, z: 0}
   branchmanager: {fileID: 0}
-  branchindex: 4
+  branchUIindex: 0
+  branchIndex: 3
 --- !u!61 &-2659946002017506738
 BoxCollider2D:
   m_ObjectHideFlags: 0
