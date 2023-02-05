@@ -56,6 +56,7 @@ public class UIBranch : MonoBehaviour,
                 
                 transform.position = originPos;
                 GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchIndex]);
+                branch.transform.SetParent(branchmanager.transform);
                 branch.transform.position = collision.transform.position;
                 branchmanager.CreateNewBranch(branchUIindex);
                 GameObject.Destroy(this.gameObject);
