@@ -50,4 +50,9 @@ public class GameManager : MonoBehaviour
             hasHope = false;
         }
     }
+
+    public void ArriveLevel(int index)
+    {
+
+    }
 }

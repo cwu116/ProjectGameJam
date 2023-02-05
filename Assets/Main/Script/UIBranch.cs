@@ -70,9 +70,10 @@ public class UIBranch : MonoBehaviour,
             HexCell cell = collision.GetComponent<HexCell>();
             if (cell.canPutBranchIn)
             {
-                TerrainCheck(collision);
+               
                 transform.position = originPos;
                 GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchIndex]);
+                TerrainCheck(collision);
                 branch.transform.SetParent(branchmanager.transform);
                 branch.transform.position = collision.transform.position;
                 branchmanager.CreateNewBranch(branchUIindex);
