@@ -22,8 +22,17 @@ public class RootConnect : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("can connect");
-        finishButton.SetActive(true);
+        if(collision.CompareTag("Branch"))
+            finishButton.SetActive(true);
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log("can connect");
+        if (collision.CompareTag("Branch"))
+            finishButton.SetActive(true);
+    }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
