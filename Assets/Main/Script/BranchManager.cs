@@ -7,7 +7,7 @@ public class BranchManager : MonoBehaviour
 {
     public List<GameObject> branchList;
     public List<Transform> branchUIPos;
-    public List<Branch> branchUIList;
+    public List<UIBranch> branchUIList;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class BranchManager : MonoBehaviour
     public void CreateNewBranch(int branchindex)
     {
         int rand = Random.Range(0, 4);
-        Branch uiBranch = Instantiate<Branch>(branchUIList[rand]);
+        UIBranch uiBranch = Instantiate<UIBranch>(branchUIList[rand]);
         uiBranch .branchUIindex = branchindex;
         uiBranch.transform.SetParent(branchUIPos[branchindex]);
         uiBranch.transform.position = branchUIPos[branchindex].position;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HexCell : MonoBehaviour
 {
     [HideInInspector] public Vector2 curPos;
-    public bool canPutBranchIn = true;
+    public bool canPutBranchIn ;
     public float weight;
 
 
@@ -18,25 +18,38 @@ public class HexCell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("EmptySpace") )
+        if (collision.CompareTag("EmptySpace"))
         {
             GameObject.Destroy(this.gameObject);
         }
 
 
-        if(collision.CompareTag("BranchUI"))
+        if (collision.CompareTag("BranchUI"))
         {
 
-            
+
         }
 
         if (collision.CompareTag("Branch"))
-            GameObject.Destroy(this.gameObject);
+        {
+            Debug.LogError(collision.gameObject.name);
+            if (collision.GetComponent<RootColliderState>().canPutOnRock)
+                canPutBranchIn = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Branch"))
+        {
+            Debug.LogError(collision.gameObject.name);
+            if (collision.GetComponent<RootColliderState>().canPutOnRock)
+                canPutBranchIn = true;
+        }
     }
 
 
-        
-    
 }
 
 
