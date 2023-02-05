@@ -25,12 +25,12 @@ public class playUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (lastFrameEnergy != GameManager.instance.energy || lastFrameStep != GameManager.instance.steps)
-        //{
-            //energyText.text = "Energy: " + GameManager.instance.energy;
-            //depthText.text = "Depth: " + GameManager.instance.energy * 10;
-            //UpdateParameters();
-        //}
+        if (lastFrameEnergy != GameManager.instance.energy || lastFrameStep != GameManager.instance.steps)
+        {
+            energyText.text = "Energy: " + GameManager.instance.energy;
+            depthText.text = "Depth: " + GameManager.instance.energy * 10;
+            UpdateParameters();
+        }
     }
 
     void UpdateParameters()
