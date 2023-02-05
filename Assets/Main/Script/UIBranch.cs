@@ -27,6 +27,7 @@ public class UIBranch : MonoBehaviour,
 
     void IDragHandler.OnDrag(PointerEventData eventData)
     {
+
         RectTransformUtility.ScreenPointToWorldPointInRectangle(GetComponent<RectTransform>(), eventData.position,
             Camera.main, out pos);
 
@@ -51,8 +52,10 @@ public class UIBranch : MonoBehaviour,
             && isMouseUp )
         {
             if (collision.CompareTag("rock") && GameManager.instance.hasHope != true)
+            {
+                transform.position = originPos;
                 return;
-
+            }
             HexCell cell = collision.GetComponent<HexCell>();
             if (cell.canPutBranchIn)
             {
@@ -88,6 +91,7 @@ public class UIBranch : MonoBehaviour,
 
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
+        originPos = transform.position;
         isMouseUp = false;
     }
 
@@ -164,7 +168,7 @@ public class UIBranch : MonoBehaviour,
             GameManager.instance.hopeStartStep = GameManager.instance.steps;
         }
 
-        Debug.LogError("Current " + GameManager.instance.energy);
+        Debug.Log("Current " + GameManager.instance.energy);
     }
 }
 
