@@ -19,10 +19,16 @@ public class UIBranch : MonoBehaviour,
     [HideInInspector]public int branchUIindex;
     public int branchIndex;
 
+    GameObject audioManager;
+    AudioSource[] m_ArrayMusic;
+
     void Start()
     {
         originPos = this.transform.position;
         branchmanager = GameObject.Find("BranchManager").GetComponent<BranchManager>();
+
+        audioManager = GameObject.Find("Audio Manager");
+        m_ArrayMusic = audioManager.GetComponents<AudioSource>();
     }
 
     void Update()
@@ -114,42 +120,56 @@ public class UIBranch : MonoBehaviour,
         {
             GameManager.instance.energy--;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[0].Play();
         }
 
         if (other.tag == "water2")
         {
             GameManager.instance.energy += 2;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[1].Play();
         }
 
         if (other.tag == "water3")
         {
             GameManager.instance.energy += 3;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[1].Play();
         }
 
         if (other.tag == "water4")
         {
             GameManager.instance.energy += 4;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[1].Play();
         }
 
         if (other.tag == "virus2")
         {
             GameManager.instance.energy -= 2;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[2].Play();
         }
 
         if (other.tag == "virus3")
         {
             GameManager.instance.energy -= 3;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[2].Play();
         }
 
         if (other.tag == "virus4")
         {
             GameManager.instance.energy -= 4;
             GameManager.instance.steps++;
+
+            m_ArrayMusic[2].Play();
         }
 
         if (other.tag == "rock")
@@ -158,6 +178,8 @@ public class UIBranch : MonoBehaviour,
             {
                 Debug.Log("break rock");
                 GameManager.instance.steps++;
+
+                m_ArrayMusic[4].Play();
             }
             else
             {
@@ -170,6 +192,8 @@ public class UIBranch : MonoBehaviour,
             GameManager.instance.hasHope = true;
             GameManager.instance.steps++;
             GameManager.instance.hopeStartStep = GameManager.instance.steps;
+
+            m_ArrayMusic[3].Play();
         }
 
         Debug.Log("Current " + GameManager.instance.energy);
