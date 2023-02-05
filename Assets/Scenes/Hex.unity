@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136915414}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9f3d6ffa597a0846b04db1ebd2b66e4, type: 3}
   m_Name: 
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   xMinValue: 0
   xMaxValue: 0
   yMinValue: -288
-  yMaxValue: 50
+  yMaxValue: 0
   translateSpeed: 50
   positionLerpTime: 1
   rotationLerpTime: 1
