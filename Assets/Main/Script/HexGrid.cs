@@ -15,6 +15,8 @@ public class HexGrid : MonoBehaviour
     public GameObject EmptySpaceCell;
     public int EmptySpaceCellWidth;
     public int EmptySpaceCellHeight;
+
+    public GameObject InitialRoot;
     HexCell[] cells;
     
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class HexGrid : MonoBehaviour
     {
         CreateCells();
         CreateEmptySpaceCell();
+        CreateInitialRoot();
     }
 
     // Update is called once per frame
@@ -86,6 +89,18 @@ public class HexGrid : MonoBehaviour
         GameObject Emptycell = Instantiate<GameObject>(EmptySpaceCell);
         Emptycell.transform.SetParent(transform, false);
         Emptycell.transform.position = cells[index].transform.position;
+    }
+
+    void CreateInitialRoot()
+    {
+        //8,5
+        if (InitialRoot == null)
+            return;
+        int index = (8) * 6 + 5;
+        GameObject root = Instantiate<GameObject>(InitialRoot);
+        root.transform.SetParent(transform, false);
+        root.transform.position = cells[index].transform.position + new Vector3(0,Hex.innerRadius*2,0);
+        root.GetComponent<RootFinish>().CloseCanvas();
     }
 
 }
