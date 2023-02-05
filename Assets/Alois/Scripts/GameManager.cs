@@ -12,7 +12,13 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+    [Header("UI")]
     [SerializeField] GameObject success;
+    [SerializeField] GameObject stage1;
+    [SerializeField] GameObject stage2;
+    [SerializeField] GameObject stage3;
+    [SerializeField] GameObject stage4;
+
 
     private void Awake()
     {
