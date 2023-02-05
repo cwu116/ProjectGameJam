@@ -43,7 +43,6 @@ public class HexCell : MonoBehaviour
 
         if (collision.CompareTag("Branch"))
         {
-            Debug.LogError(collision.gameObject.name);
             if (collision.GetComponent<RootColliderState>().canPutOnRock)
                 canPutBranchIn = true;
         }
