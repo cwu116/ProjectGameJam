@@ -19,7 +19,7 @@ public class playUI : MonoBehaviour
         lastFrameStep = GameManager.instance.steps;
 
         energyText.text = "Energy: " + GameManager.instance.energy;
-        depthText.text = "Depth: " + GameManager.instance.energy * 10;
+        depthText.text = "Depth: " + GameManager.instance.steps * 10;
     }
 
     // Update is called once per frame

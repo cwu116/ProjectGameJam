@@ -138,7 +138,7 @@ public class CameraController : MonoBehaviour
     //移动速度
     [SerializeField] private float translateSpeed = 10f;
     //加速系数 Shift按下时起作用
-    [SerializeField] private float boost = 3.5f;
+    //[SerializeField] private float boost = 3.5f;
     //插值到目标位置所需的时间
     [Range(0.01f, 1f), SerializeField] private float positionLerpTime = 1f;
     //插值到目标旋转所需的时间
