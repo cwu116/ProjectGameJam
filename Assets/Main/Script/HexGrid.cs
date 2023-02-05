@@ -96,7 +96,7 @@ public class HexGrid : MonoBehaviour
         //8,5
         if (InitialRoot == null)
             return;
-        int index = (9) * 7 + 4;
+        int index = (9) * 7 + 5;
         GameObject root = Instantiate<GameObject>(InitialRoot);
         root.transform.SetParent(transform, false);
         root.transform.position = cells[index].transform.position + new Vector3(0,Hex.innerRadius*2,0);

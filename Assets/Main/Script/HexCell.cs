@@ -8,12 +8,19 @@ public class HexCell : MonoBehaviour
     public bool canPutBranchIn ;
     public float weight;
 
+    GameObject whiteblock;
 
+    private void Start()
+    {
+        whiteblock = transform.Find("whiteBlock").gameObject;
+    }
 
     // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        if (canPutBranchIn)
+            whiteblock.SetActive(true);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
