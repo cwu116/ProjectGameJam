@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+    [SerializeField] GameObject success;
+
     private void Awake()
     {
         instance = this;
@@ -53,6 +55,9 @@ public class GameManager : MonoBehaviour
 
     public void ArriveLevel(int index)
     {
-
+        if(index == 3)
+        {
+            success.SetActive(true);
+        }
     }
 }
