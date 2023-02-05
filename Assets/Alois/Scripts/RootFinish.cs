@@ -16,7 +16,7 @@ public class RootFinish : MonoBehaviour
     }
 
     
-    void CloseCanvas()
+    public void CloseCanvas()
     {
         canvas.gameObject.SetActive(false);
         CanPutOnRock();
