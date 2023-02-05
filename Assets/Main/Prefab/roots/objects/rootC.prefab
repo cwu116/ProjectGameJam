@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4969327230417063630}
   - component: {fileID: 2523021201851525887}
   - component: {fileID: 1252922924643754782}
+  - component: {fileID: 4539794000636397829}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12292361, y: -0.13223143}
+  m_Offset: {x: 0.04880491, y: -0.30496642}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,8 +110,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1308703, y: 1.2644628}
+  m_Size: {x: 1.4884996, y: 0.9189928}
   m_EdgeRadius: 0
+--- !u!114 &4539794000636397829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464652136952829499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &8496455593218448113
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +137,6 @@ GameObject:
   - component: {fileID: 8496455593218448124}
   - component: {fileID: 8496455593218448127}
   - component: {fileID: 8496455593218448126}
-  - component: {fileID: 4576700099193906977}
   m_Layer: 5
   m_Name: finish
   m_TagString: Untagged
@@ -234,19 +247,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4576700099193906977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8496455593218448113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7246cdec7f7dbbd479e8d0ce60d9a7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 8496455594465403270}
 --- !u!1 &8496455593237369920
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,8 +258,9 @@ GameObject:
   - component: {fileID: 8496455593237369921}
   - component: {fileID: 2324560763983474680}
   - component: {fileID: 8238304100075362231}
-  - component: {fileID: 4695737338809885900}
   - component: {fileID: 4890087392778649627}
+  - component: {fileID: 6005798906489644384}
+  - component: {fileID: 8427963458261819575}
   m_Layer: 0
   m_Name: rootC
   m_TagString: Branch
@@ -317,19 +318,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4695737338809885900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8496455593237369920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efbab7bbb71e79c40830d923c86b4c7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finishButton: {fileID: 8496455593218448113}
 --- !u!114 &4890087392778649627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +332,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 8496455593983848741}
   button: {fileID: 8496455594639072346}
+--- !u!114 &6005798906489644384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496455593237369920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7246cdec7f7dbbd479e8d0ce60d9a7ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 8496455594465403270}
+  canPutOnRock: 0
+  button: {fileID: 8496455593218448126}
+  colliderstateList:
+  - {fileID: 7398458187858138957}
+  - {fileID: 2728507554978749199}
+  - {fileID: 4539794000636397829}
+--- !u!114 &8427963458261819575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496455593237369920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbab7bbb71e79c40830d923c86b4c7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishButton: {fileID: 8496455593218448113}
 --- !u!1 &8496455593954578879
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,9 +375,10 @@ GameObject:
   - component: {fileID: 8496455593954578876}
   - component: {fileID: 8496455593954578874}
   - component: {fileID: 8496455593954578877}
+  - component: {fileID: 7398458187858138957}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,6 +476,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7398458187858138957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496455593954578879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &8496455593983848740
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +499,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8496455593983848741}
   - component: {fileID: 8496455593983848739}
-  - component: {fileID: 8496455593983848738}
   m_Layer: 0
   m_Name: rootC
   m_TagString: Untagged
@@ -543,19 +576,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8496455593983848738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8496455593983848740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efbab7bbb71e79c40830d923c86b4c7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finishButton: {fileID: 8496455593218448113}
 --- !u!1 &8496455594293699983
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,9 +946,10 @@ GameObject:
   - component: {fileID: 8496455594897966835}
   - component: {fileID: 8496455594897966833}
   - component: {fileID: 8496455594897966832}
+  - component: {fileID: 2728507554978749199}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1026,6 +1047,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2728507554978749199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496455594897966834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &8496455595035385597
 GameObject:
   m_ObjectHideFlags: 0

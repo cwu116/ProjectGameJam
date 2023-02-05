@@ -32,14 +32,24 @@ public class HexCell : MonoBehaviour
 
         if (collision.CompareTag("Branch"))
         {
-            if((transform.position - collision.transform.position).magnitude < 5) 
-            GameObject.Destroy(this.gameObject);
+            Debug.LogError(collision.gameObject.name);
+            if (collision.GetComponent<RootColliderState>().canPutOnRock)
+                canPutBranchIn = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Branch"))
+        {
+            Debug.LogError(collision.gameObject.name);
+            if (collision.GetComponent<RootColliderState>().canPutOnRock)
+                canPutBranchIn = true;
         }
     }
 
 
-        
-    
 }
 
 

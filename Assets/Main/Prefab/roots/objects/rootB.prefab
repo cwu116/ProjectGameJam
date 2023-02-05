@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 81282892955942598}
   - component: {fileID: 7057649862414185898}
   - component: {fileID: 2440112179281943978}
+  - component: {fileID: 7432178905345526575}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10026914, y: -0.09439391}
+  m_Offset: {x: 0.049907625, y: 0.20319843}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,8 +110,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7041683, y: 1.6193901}
+  m_Size: {x: 1.4954375, y: 1.0242054}
   m_EdgeRadius: 0
+--- !u!114 &7432178905345526575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093287165041289396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &7335781157540277460
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,9 +136,10 @@ GameObject:
   - component: {fileID: 7335781157540277461}
   - component: {fileID: 7335781157540277467}
   - component: {fileID: 7335781157540277466}
+  - component: {fileID: 3000144121399555635}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,6 +237,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3000144121399555635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335781157540277460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &7335781157626962546
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,9 +398,10 @@ GameObject:
   - component: {fileID: 7335781158290541380}
   - component: {fileID: 7335781158290541386}
   - component: {fileID: 7335781158290541381}
+  - component: {fileID: 5042025550995202271}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,6 +499,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5042025550995202271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335781158290541383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &7335781158332025146
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,9 +645,10 @@ GameObject:
   - component: {fileID: 7335781158607191689}
   - component: {fileID: 7335781158607191695}
   - component: {fileID: 7335781158607191694}
+  - component: {fileID: 6298441914898326244}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Branch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,6 +746,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6298441914898326244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335781158607191688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d172774872c5e646809338be5bac875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canPutOnRock: 0
 --- !u!1 &7335781158611697637
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +1006,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7335781158956516755}
   - component: {fileID: 7335781158956516753}
-  - component: {fileID: 7335781158956516752}
   m_Layer: 0
   m_Name: rootB
   m_TagString: Untagged
@@ -1029,19 +1084,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7335781158956516752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7335781158956516754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efbab7bbb71e79c40830d923c86b4c7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finishButton: {fileID: 7335781159069569568}
 --- !u!1 &7335781159069569568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1096,6 @@ GameObject:
   - component: {fileID: 7335781159069569575}
   - component: {fileID: 7335781159069569574}
   - component: {fileID: 7335781159069569569}
-  - component: {fileID: 738532850753398303}
   m_Layer: 5
   m_Name: finish
   m_TagString: Untagged
@@ -1165,19 +1206,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &738532850753398303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7335781159069569568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7246cdec7f7dbbd479e8d0ce60d9a7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 7335781158865773145}
 --- !u!1 &7335781159184581740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,6 +1219,7 @@ GameObject:
   - component: {fileID: 4659108603232303228}
   - component: {fileID: 3761556593531770319}
   - component: {fileID: 2177998732020413440}
+  - component: {fileID: 5307883351899835000}
   m_Layer: 0
   m_Name: rootB
   m_TagString: Branch
@@ -1275,3 +1304,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   root: {fileID: 7335781158956516755}
   button: {fileID: 7335781158332025145}
+--- !u!114 &5307883351899835000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335781159184581740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7246cdec7f7dbbd479e8d0ce60d9a7ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 7335781158865773145}
+  canPutOnRock: 0
+  button: {fileID: 7335781159069569569}
+  colliderstateList:
+  - {fileID: 6298441914898326244}
+  - {fileID: 3000144121399555635}
+  - {fileID: 5042025550995202271}
+  - {fileID: 7432178905345526575}

@@ -29,7 +29,7 @@ public class Branch : MonoBehaviour
             collision.CompareTag("rock") ||
             collision.CompareTag("hope")))
         {
-               if((collision.transform.position - transform.position).magnitude < 3)
+               if((collision.transform.position - transform.position).magnitude < 5)
                 GameObject.Destroy(collision.gameObject);
         }
     }

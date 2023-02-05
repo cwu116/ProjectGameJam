@@ -6,38 +6,28 @@ using UnityEngine.UI;
 public class RootFinish : MonoBehaviour
 {
     public Canvas canvas;
-    bool canPutOnRock;
+    public bool canPutOnRock;
+    public Button button;
+    public List<RootColliderState> colliderstateList;
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Button>().onClick.AddListener(CloseCanvas);
-        GetComponent<Button>().onClick.AddListener(CanPutOnRock);
+        button.onClick.AddListener(CloseCanvas);
     }
 
     
     void CloseCanvas()
     {
         canvas.gameObject.SetActive(false);
+        CanPutOnRock();
     }
 
     void CanPutOnRock()
     {
         canPutOnRock = true;
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if(canPutOnRock && (collision.CompareTag("mud") ||
-            collision.CompareTag("water2") ||
-            collision.CompareTag("water3") ||
-            collision.CompareTag("water4") ||
-            collision.CompareTag("virus2") ||
-            collision.CompareTag("virus3") ||
-            collision.CompareTag("virus4") ||
-            collision.CompareTag("rock") ||
-            collision.CompareTag("hope")))
+        for(int i = 0; i< colliderstateList.Count; i++)
         {
-            collision.GetComponent<HexCell>().canPutBranchIn = true;
+            colliderstateList[i].canPutOnRock = true;
         }
     }
 }
