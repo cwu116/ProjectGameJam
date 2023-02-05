@@ -41,11 +41,11 @@ public class GameManager : MonoBehaviour
 
     void HopeLastTime()
     {
-        if (hopeStartStep > 0 && hopeStartStep < steps && hasHope)
+        if (hopeStartStep > 0 && hopeStartStep + 3 > steps && hasHope)
         {
-            hopeStartStep++;
+            return;
         }
-        if(hopeStartStep >= steps)
+        if(hopeStartStep + 3 <= steps)
         {
             hasHope = false;
         }
