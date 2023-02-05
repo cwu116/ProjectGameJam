@@ -25,6 +25,11 @@ public class UIBranch : MonoBehaviour,
         branchmanager = GameObject.Find("BranchManager").GetComponent<BranchManager>();
     }
 
+    void Update()
+    {
+        originPos = transform.parent.position;
+    }
+
     void IDragHandler.OnDrag(PointerEventData eventData)
     {
 
@@ -91,7 +96,6 @@ public class UIBranch : MonoBehaviour,
 
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
-        originPos = transform.position;
         isMouseUp = false;
     }
 
