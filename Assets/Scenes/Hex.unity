@@ -1036,7 +1036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1600418857099171604, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6999567262148224533, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: m_Name
@@ -1071,6 +1071,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1978733028}
     - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: branch1
+      value: 
+      objectReference: {fileID: 3899720178423986459, guid: bdc032f9171627d4a86c95ca2c84f1d4, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: branch2
+      value: 
+      objectReference: {fileID: 3285120798667555806, guid: 82f95941fa919a4428c923eecb1ded7f, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: branch3
+      value: 
+      objectReference: {fileID: 9124363589939961969, guid: 4e68a388935570b46810e8a3689815dc, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: branch4
+      value: 
+      objectReference: {fileID: 9124363589939961969, guid: a9826aabe1c721e45baf8265558f2226, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: success
       value: 
       objectReference: {fileID: 2115645862}
@@ -1082,6 +1098,22 @@ PrefabInstance:
       propertyPath: treeContainer
       value: 
       objectReference: {fileID: 514899649}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: slotGroup.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: slotGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 3836675723929734827}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: slotGroup.Array.data[1]
+      value: 
+      objectReference: {fileID: 3836675724730985794}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: slotGroup.Array.data[2]
+      value: 
+      objectReference: {fileID: 3836675722734074214}
     - target: {fileID: 6999567262148224539, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2323,7 +2355,7 @@ PrefabInstance:
     - target: {fileID: 4778372642489365688, guid: 36b9988554ef3674982378ee90cac291, type: 3}
       propertyPath: m_Text
       value: 'Hope: When you collect a Hope, in the next three actions, roots can
-        penetrate rocks without consuming energy.'
+        penetrate rocks.'
       objectReference: {fileID: 0}
     - target: {fileID: 6466306057897138554, guid: 36b9988554ef3674982378ee90cac291, type: 3}
       propertyPath: m_LocalPosition.z
