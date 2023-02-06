@@ -28,7 +28,7 @@ public class playUI : MonoBehaviour
         if (lastFrameEnergy != GameManager.instance.energy || lastFrameStep != GameManager.instance.steps)
         {
             energyText.text = "Energy: " + GameManager.instance.energy;
-            depthText.text = "Depth: " + GameManager.instance.energy * 10;
+            depthText.text = "Depth: " + GameManager.instance.steps * 10;
             UpdateParameters();
         }
     }

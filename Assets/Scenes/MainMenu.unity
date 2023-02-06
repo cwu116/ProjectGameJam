@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Virus: The most dangerous area. It will cost 2 unit of energy.'
+  m_Text: 'Virus: The most dangerous area. It will cost 1-3 unit of energy.'
 --- !u!222 &109781522
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 283f6b378d342e746840a8536d4a2e13, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7dec947a6bf46a14ea98534da6fd23d1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -342,7 +342,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4a758772d31148d4aadd03685522cbc1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9ca92a56bc35fc741840553474381ad2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -655,8 +655,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hope: This area has strong power. When you collect 3 Hopes, you can destroy
-    Rocks.'
+  m_Text: 'Hope: When you collect a Hope, in the next three actions, roots can penetrate
+    rocks without consuming energy.'
 --- !u!222 &483228600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 743951486}
   - component: {fileID: 743951488}
   - component: {fileID: 743951487}
+  - component: {fileID: 743951489}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1059,6 +1060,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743951485}
   m_CullTransparentMesh: 1
+--- !u!95 &743951489
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743951485}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dcb20b2e2fb0fd04c8e79b4236dde9d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &856059164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,7 +3094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Rock: Very hard area. You need extra power to destroy it.'
+  m_Text: 'Rock: Very hard area. It cannot be penetrated by roots.'
 --- !u!222 &1561335271
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3830,7 +3851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Water: Very important area. It will produce 1 unit of energy.'
+  m_Text: 'Water: Very important area. It will produce 2-4 unit of energy.'
 --- !u!222 &1814208539
 CanvasRenderer:
   m_ObjectHideFlags: 0
