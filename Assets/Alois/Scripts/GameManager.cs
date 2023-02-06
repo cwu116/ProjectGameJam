@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite tree3;
     [SerializeField] Sprite tree4;
 
+    GameObject audioManager;
+    AudioSource[] m_ArrayMusic;
+
 
     private void Awake()
     {
@@ -47,6 +50,10 @@ public class GameManager : MonoBehaviour
         //GetComponent<EnergyManager>().InitEnergyCount();
 
         cameraController = FindObjectOfType<CameraController>();
+
+        audioManager = GameObject.Find("Audio Manager");
+        m_ArrayMusic = audioManager.GetComponents<AudioSource>();
+        m_ArrayMusic[5].Play();
 
         energy = 5;
         steps = 0;
@@ -101,6 +108,9 @@ public class GameManager : MonoBehaviour
         switch (index)
         {
             case 0:
+                m_ArrayMusic[5].Stop();
+                m_ArrayMusic[6].Play();
+
                 if (stage2On == true)
                 {
                     stage2.SetActive(true);
@@ -111,6 +121,9 @@ public class GameManager : MonoBehaviour
                 break;
 
             case 1:
+                m_ArrayMusic[6].Stop();
+                m_ArrayMusic[7].Play();
+
                 if (stage3On == true)
                 {
                     stage3.SetActive(true);
@@ -121,6 +134,9 @@ public class GameManager : MonoBehaviour
                 break;
 
             case 2:
+                m_ArrayMusic[7].Stop();
+                m_ArrayMusic[8].Play();
+
                 if (stage4On == true)
                 {
                     stage4.SetActive(true);
@@ -131,6 +147,8 @@ public class GameManager : MonoBehaviour
                 break;
 
             case 3:
+                m_ArrayMusic[8].Stop();
+
                 cameraController.toggle = false;
 
                 cameraTransform = mainCamara.transform;
