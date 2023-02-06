@@ -651,9 +651,45 @@ PrefabInstance:
       value: Game Manager 1
       objectReference: {fileID: 0}
     - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: tree2
+      value: 
+      objectReference: {fileID: 21300000, guid: 4c51be75830be674899eaced2e1f50d7, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: tree3
+      value: 
+      objectReference: {fileID: 21300000, guid: c4f212ff38dd9e845bb240099ec6e0ed, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: tree4
+      value: 
+      objectReference: {fileID: 21300000, guid: 7eb3460e05ddc824eace88bd9ed82b6d, type: 3}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: stage1
+      value: 
+      objectReference: {fileID: 1978733031}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: stage2
+      value: 
+      objectReference: {fileID: 1978733030}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: stage3
+      value: 
+      objectReference: {fileID: 1978733029}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: stage4
+      value: 
+      objectReference: {fileID: 1978733028}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: success
       value: 
       objectReference: {fileID: 2115645862}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: mainCamara
+      value: 
+      objectReference: {fileID: 2136915416}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: treeContainer
+      value: 
+      objectReference: {fileID: 514899649}
     - target: {fileID: 6999567262148224539, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -923,7 +959,7 @@ GameObject:
   - component: {fileID: 514899651}
   - component: {fileID: 514899650}
   m_Layer: 0
-  m_Name: tree1
+  m_Name: tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1850,7 +1886,7 @@ MonoBehaviour:
   - 10
   - 5
   - 15
-  EmptySpaceCell: {fileID: 6610289002390868917, guid: f8a0b921d728fd1449b29ff4d21b9882, type: 3}
+  EmptySpaceCell: {fileID: 4537563976399743766, guid: 5b05fc828593130408268763d9b28a38, type: 3}
   EmptySpaceCellWidth: 3
   EmptySpaceCellHeight: 2
   InitialRoot: {fileID: 0}
@@ -2006,7 +2042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6466306059312668066, guid: 36b9988554ef3674982378ee90cac291, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6466306059422084688, guid: 36b9988554ef3674982378ee90cac291, type: 3}
       propertyPath: m_Color.a
@@ -2018,6 +2054,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36b9988554ef3674982378ee90cac291, type: 3}
+--- !u!1 &1978733028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466306059082746498, guid: 36b9988554ef3674982378ee90cac291, type: 3}
+  m_PrefabInstance: {fileID: 1978733027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978733029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466306058837508552, guid: 36b9988554ef3674982378ee90cac291, type: 3}
+  m_PrefabInstance: {fileID: 1978733027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978733030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466306059658643216, guid: 36b9988554ef3674982378ee90cac291, type: 3}
+  m_PrefabInstance: {fileID: 1978733027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978733031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466306059312668066, guid: 36b9988554ef3674982378ee90cac291, type: 3}
+  m_PrefabInstance: {fileID: 1978733027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2115645862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,7 +2253,7 @@ MonoBehaviour:
   isRangeClamped: 1
   xMinValue: 0
   xMaxValue: 0
-  yMinValue: -288
+  yMinValue: -72
   yMaxValue: 0
   translateSpeed: 50
   positionLerpTime: 1

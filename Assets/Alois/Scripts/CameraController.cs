@@ -41,10 +41,10 @@ public class CameraController : MonoBehaviour
         public float rotZ;
 
         //活动区域限制
-        private readonly float xMinValue;
-        private readonly float xMaxValue;
-        private readonly float yMinValue;
-        private readonly float yMaxValue;
+        private float xMinValue;
+        private float xMaxValue;
+        public float yMinValue;
+        private float yMaxValue;
 
         /// <summary>
         /// 默认构造函数
@@ -125,15 +125,17 @@ public class CameraController : MonoBehaviour
     }
 
     //控制开关
-    [SerializeField] private bool toggle = true;
+    public bool toggle = true;
 
     //是否限制活动范围
     [SerializeField] private bool isRangeClamped;
     //限制范围 当isRangeClamped为true时起作用
     [SerializeField] private float xMinValue = -100f;   //x最小值
     [SerializeField] private float xMaxValue = 100f;    //x最大值
-    [SerializeField] private float yMinValue = -100f;   //z最小值
+    public float yMinValue = -100f;   //z最小值
     [SerializeField] private float yMaxValue = 100f;    //z最大值
+
+    float lastFrameYMinValue;
 
     //移动速度
     [SerializeField] private float translateSpeed = 10f;
@@ -161,6 +163,9 @@ public class CameraController : MonoBehaviour
     private void Awake()
     {
         //初始化
+
+        lastFrameYMinValue = yMinValue;
+
         if (isRangeClamped)
         {
             initialCameraState = new CameraState(xMinValue, xMaxValue, yMinValue, yMaxValue);
@@ -182,9 +187,21 @@ public class CameraController : MonoBehaviour
     }
     private void LateUpdate()
     {
+    
+
         if (!toggle) return;
         //if (OnResetUpdate()) return;
         OnTranslateUpdate();
+
+        if (isRangeClamped && lastFrameYMinValue != yMinValue)
+        {
+            initialCameraState.yMinValue = yMinValue;
+            targetCameraState.yMinValue = yMinValue;
+            interpolatingCameraState.yMinValue = yMinValue;
+
+            lastFrameYMinValue = yMinValue;
+
+        }
     }
 
     private bool OnResetUpdate()
