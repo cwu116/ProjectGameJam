@@ -33,7 +33,7 @@ public class UIBranch : MonoBehaviour,
 
     void Update()
     {
-        originPos = transform.parent.position;
+        
     }
 
     void IDragHandler.OnDrag(PointerEventData eventData)
@@ -64,6 +64,7 @@ public class UIBranch : MonoBehaviour,
         {
             if (collision.CompareTag("rock") && GameManager.instance.hasHope != true)
             {
+                originPos = transform.parent.position;
                 transform.position = originPos;
                 return;
             }
@@ -71,7 +72,6 @@ public class UIBranch : MonoBehaviour,
             if (cell.canPutBranchIn)
             {
                
-                transform.position = originPos;
                 GameObject branch = Instantiate<GameObject>(branchmanager.branchList[branchIndex]);
                 TerrainCheck(collision);
                 branch.transform.SetParent(branchmanager.transform);
@@ -81,11 +81,13 @@ public class UIBranch : MonoBehaviour,
             }
             else
             {
+                originPos = transform.parent.position;
                 transform.position = originPos;
             }
         }
         else if(isMouseUp)
         {
+            originPos = transform.parent.position;
             transform.position = originPos;
         }
 
