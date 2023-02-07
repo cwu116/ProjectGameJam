@@ -38,6 +38,10 @@ public class GameManager : MonoBehaviour
     GameObject audioManager;
     AudioSource[] m_ArrayMusic;
 
+    [Header("branchUI")]
+    [SerializeField] GameObject[] slotGroup;
+
+
 
     private void Awake()
     {
@@ -69,7 +73,7 @@ public class GameManager : MonoBehaviour
     {
         HopeLastTime();
 
-        if(energy == 0)
+        if (energy == 0)
         {
             Debug.Log("game over");
         }
@@ -88,7 +92,21 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        foreach (GameObject slot in slotGroup)
+        {
+            if (slot.GetComponentsInChildren<Transform>(true).Length > 1)
+            {
+                Transform branch = slot.transform.GetChild(0);
+                Transform sparks = branch.transform.GetChild(0);
+                sparks.gameObject.SetActive(hasHope);
+            }
+            else
+            {
+                Debug.Log("no branch");
+            }
 
+
+        }
     }
 
     void HopeLastTime()
@@ -97,7 +115,7 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        if(hopeStartStep + 3 <= steps)
+        if (hopeStartStep + 3 <= steps)
         {
             hasHope = false;
         }
@@ -158,10 +176,11 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
-        if(index < 3 && index >= 0)
+        if (index < 3 && index >= 0)
         {
             cameraController.yMinValue = -72f * (index + 2);
         }
 
     }
 }
+

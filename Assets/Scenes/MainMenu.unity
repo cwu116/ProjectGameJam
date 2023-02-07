@@ -656,7 +656,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Hope: When you collect a Hope, in the next three actions, roots can penetrate
-    rocks without consuming energy.'
+    rocks.'
 --- !u!222 &483228600
 CanvasRenderer:
   m_ObjectHideFlags: 0
