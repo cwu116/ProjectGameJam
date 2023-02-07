@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4272497920978764525}
   - component: {fileID: 4272497920978764524}
+  - component: {fileID: 5425359924148234456}
   m_Layer: 0
   m_Name: cavern1
   m_TagString: EmptySpace
@@ -85,6 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5425359924148234456
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272497920978764523}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &5143848313563272477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,6 +114,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4272497920978764525}
     m_Modifications:
+    - target: {fileID: 362827622581027461, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 802121243482489213, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182777853808124819, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404499708626987263, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583713208708069288, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597719705411202208, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462387509365231770, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519963849711031153, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628022136879263110, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 3258732431047113775, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -136,6 +194,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4466631661249222409, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286330298298330060, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 5959869157793467566, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
       propertyPath: m_Name
       value: cavern1
@@ -143,6 +209,34 @@ PrefabInstance:
     - target: {fileID: 5959869157793467566, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000636118948299725, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174778013564348348, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421627582510182937, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952817049451990619, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156116898250591903, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465618914224900139, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513419619178857554, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5140532399279849834, guid: 5a93bf61c7c218049b8a4473e42e78b4, type: 3}

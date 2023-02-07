@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2550619560088481044}
   - component: {fileID: 2550619560088481067}
+  - component: {fileID: 5526908346275087129}
   m_Layer: 0
   m_Name: cavern4
   m_TagString: EmptySpace
@@ -85,6 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5526908346275087129
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550619560088481066}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &4791526396884791327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116,6 +138,18 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 317701485833692132, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 338690212016691082, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 406738254056774168, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 663930612694307690, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -132,6 +166,14 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 993932098416231490, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106098969870639291, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 1383230743051974689, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -139,6 +181,10 @@ PrefabInstance:
     - target: {fileID: 1383230743051974689, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: canPutBranchIn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539491585605323760, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
       objectReference: {fileID: 0}
     - target: {fileID: 1912255334375729452, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
@@ -148,6 +194,10 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2082585389339106045, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 2994075187074310135, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -155,6 +205,10 @@ PrefabInstance:
     - target: {fileID: 2994075187074310135, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: canPutBranchIn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450445591813188646, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
       objectReference: {fileID: 0}
     - target: {fileID: 4175384410462647122, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
@@ -220,6 +274,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4584268077706903683, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639277228152341685, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 5047796825363461988, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -244,6 +306,14 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5631523113698221519, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639051316219853268, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 6927998093154305146, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -252,6 +322,14 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7039657779426120262, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370800461730658219, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 7484565913559376279, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -259,6 +337,10 @@ PrefabInstance:
     - target: {fileID: 7484565913559376279, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: canPutBranchIn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152423759551883931, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
       objectReference: {fileID: 0}
     - target: {fileID: 8226598719428467393, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Name
@@ -272,6 +354,14 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8302424997345680165, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8424872820857489705, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 8455303743874443508, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -288,6 +378,10 @@ PrefabInstance:
       propertyPath: canPutBranchIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8706553240551991070, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
+      objectReference: {fileID: 0}
     - target: {fileID: 8833957447312780691, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -295,6 +389,10 @@ PrefabInstance:
     - target: {fileID: 8833957447312780691, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: canPutBranchIn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004915597196713538, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
+      propertyPath: m_TagString
+      value: EmptySpace
       objectReference: {fileID: 0}
     - target: {fileID: 9132317579087893711, guid: b88ea6b033f8a814a9b2bf93f3a98ff7, type: 3}
       propertyPath: m_Enabled
