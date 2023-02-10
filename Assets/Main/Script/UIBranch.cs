@@ -15,7 +15,7 @@ public class UIBranch : MonoBehaviour,
 
     bool isMouseUp;
     bool isInTrigger;
-    bool isPutIn;
+    [HideInInspector] public bool isPutIn;
 
     [HideInInspector]public int branchUIindex;
     public int branchIndex;
@@ -54,6 +54,7 @@ public class UIBranch : MonoBehaviour,
         isInTrigger = true;
         if (isPutIn)
             return;
+
         if ((collision.CompareTag("mud") ||
             collision.CompareTag("water2") ||
             collision.CompareTag("water3") ||
@@ -67,8 +68,7 @@ public class UIBranch : MonoBehaviour,
         {
             if (collision.CompareTag("rock") && GameManager.instance.hasHope != true)
             {
-                originPos = transform.parent.position;
-                transform.position = originPos;
+                ReturnToOriginPos();
                 return;
             }
             HexCell cell = collision.GetComponent<HexCell>();
@@ -79,22 +79,35 @@ public class UIBranch : MonoBehaviour,
                 TerrainCheck(collision);
                 branch.transform.SetParent(branchmanager.transform);
                 branch.transform.position = collision.transform.position;
-                branchmanager.CreateNewBranch(branchUIindex);
+                //branchmanager.CreateNewBranch(branchUIindex);
+                //GameObject.Destroy(this.gameObject);
+                RootFinish rootfinish = branch.GetComponent<RootFinish>();
+                RootRevert rootRevert = branch.GetComponent<RootRevert>();
+                rootRevert.branchUI = this.gameObject;
+                rootfinish.branchUI = this.gameObject;
+                rootfinish.branchIndex = branchUIindex;
+
                 isPutIn = true;
-                GameObject.Destroy(this.gameObject);
+                ReturnToOriginPos();
+                this.gameObject.SetActive(false);
+               
             }
             else
             {
-                originPos = transform.parent.position;
-                transform.position = originPos;
+                ReturnToOriginPos();
             }
         }
         else if(isMouseUp)
         {
-            originPos = transform.parent.position;
-            transform.position = originPos;
+            ReturnToOriginPos();
         }
 
+    }
+
+    private void ReturnToOriginPos()
+    {
+        originPos = transform.parent.position;
+        transform.position = originPos;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -115,95 +128,14 @@ public class UIBranch : MonoBehaviour,
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
         
-        isMouseUp = true;  
-        if(isInTrigger == false)
-            transform.position = originPos;
+        isMouseUp = true;
+        if (isInTrigger == false)
+            ReturnToOriginPos();
     }
 
 
     void TerrainCheck(Collider2D other)
     {
-        if (other.tag == "mud")
-        {
-            GameManager.instance.energy--;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[0].Play();
-        }
-
-        if (other.tag == "water2")
-        {
-            GameManager.instance.energy += 2;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[1].Play();
-        }
-
-        if (other.tag == "water3")
-        {
-            GameManager.instance.energy += 3;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[1].Play();
-        }
-
-        if (other.tag == "water4")
-        {
-            GameManager.instance.energy += 4;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[1].Play();
-        }
-
-        if (other.tag == "virus2")
-        {
-            GameManager.instance.energy -= 2;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[2].Play();
-        }
-
-        if (other.tag == "virus3")
-        {
-            GameManager.instance.energy -= 3;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[2].Play();
-        }
-
-        if (other.tag == "virus4")
-        {
-            GameManager.instance.energy -= 4;
-            GameManager.instance.steps++;
-
-            m_ArrayMusic[2].Play();
-        }
-
-        if (other.tag == "rock")
-        {
-            if (GameManager.instance.hasHope)
-            {
-                Debug.Log("break rock");
-                GameManager.instance.steps++;
-
-                m_ArrayMusic[4].Play();
-            }
-            else
-            {
-                Debug.Log("can't break rock");
-            }
-        }
-
-        if (other.tag == "hope")
-        {
-            GameManager.instance.hasHope = true;
-            GameManager.instance.steps++;
-            GameManager.instance.hopeStartStep = GameManager.instance.steps;
-
-            m_ArrayMusic[3].Play();
-        }
-
-        Debug.Log("Current " + GameManager.instance.energy);
     }
 }
 

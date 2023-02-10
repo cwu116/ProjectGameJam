@@ -100,7 +100,7 @@ public class HexGrid : MonoBehaviour
         GameObject root = Instantiate<GameObject>(InitialRoot);
         root.transform.SetParent(transform, false);
         root.transform.position = cells[index].transform.position + new Vector3(0,Hex.innerRadius*2,0);
-        root.GetComponent<RootFinish>().CloseCanvas();
+        root.GetComponent<RootFinish>().CloseCanvas1();
     }
 
 }
