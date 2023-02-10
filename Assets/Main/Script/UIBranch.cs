@@ -15,6 +15,7 @@ public class UIBranch : MonoBehaviour,
 
     bool isMouseUp;
     bool isInTrigger;
+    bool isPutIn;
 
     [HideInInspector]public int branchUIindex;
     public int branchIndex;
@@ -51,6 +52,8 @@ public class UIBranch : MonoBehaviour,
     private void OnTriggerStay2D(Collider2D collision)
     {
         isInTrigger = true;
+        if (isPutIn)
+            return;
         if ((collision.CompareTag("mud") ||
             collision.CompareTag("water2") ||
             collision.CompareTag("water3") ||
@@ -77,6 +80,7 @@ public class UIBranch : MonoBehaviour,
                 branch.transform.SetParent(branchmanager.transform);
                 branch.transform.position = collision.transform.position;
                 branchmanager.CreateNewBranch(branchUIindex);
+                isPutIn = true;
                 GameObject.Destroy(this.gameObject);
             }
             else
