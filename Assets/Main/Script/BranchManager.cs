@@ -8,6 +8,15 @@ public class BranchManager : MonoBehaviour
     public List<GameObject> branchList;
     public List<Transform> branchUIPos;
     public List<UIBranch> branchUIList;
+    public static BranchManager instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+            Destroy(instance);
+        else
+            instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +25,6 @@ public class BranchManager : MonoBehaviour
         CreateNewBranch(2);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void CreateNewBranch(int branchindex)
     {

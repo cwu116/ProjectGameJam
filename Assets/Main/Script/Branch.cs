@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Branch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    RootFinish rootfinish;
+    RootRevert rootRevert;
+    private void Start()
     {
-        
+        rootRevert = GetComponent<RootRevert>();
+        rootfinish = GetComponent<RootFinish>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -29,8 +24,16 @@ public class Branch : MonoBehaviour
             collision.CompareTag("rock") ||
             collision.CompareTag("hope")))
         {
-               if((collision.transform.position - transform.position).magnitude < 1)
-                GameObject.Destroy(collision.gameObject);
+            if ((collision.transform.position - transform.position).magnitude < 1)
+            {
+                //GameObject.Destroy(collision.gameObject);
+                collision.gameObject.SetActive(false);
+                if(rootfinish)
+                    rootfinish.rock = collision.gameObject;
+                if (rootRevert)
+                    rootRevert.rock = collision.gameObject;
+
+            }
         }
     }
 }
