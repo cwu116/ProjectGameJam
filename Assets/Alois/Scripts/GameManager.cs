@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] GameObject success;
+    [SerializeField] GameObject fail;
     [SerializeField] GameObject stage1;
     [SerializeField] GameObject stage2;
     [SerializeField] GameObject stage3;
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
         if (energy == 0)
         {
             Debug.Log("game over");
+            fail.SetActive(true);
         }
 
         if (cameraUp)

@@ -160,7 +160,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 333caab0f72fdf84d81fb6d03d65c310, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1043,6 +1043,10 @@ PrefabInstance:
       value: Game Manager 1
       objectReference: {fileID: 0}
     - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
+      propertyPath: fail
+      value: 
+      objectReference: {fileID: 375476569}
+    - target: {fileID: 6999567262148224538, guid: 04cc68b24f55556469912cf2d73ff7f8, type: 3}
       propertyPath: tree2
       value: 
       objectReference: {fileID: 21300000, guid: 4c51be75830be674899eaced2e1f50d7, type: 3}
@@ -1258,7 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7372549}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.89411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4024,6 +4028,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   originPos: {x: 0, y: 0, z: 0}
   branchmanager: {fileID: 0}
+  isPutIn: 0
   branchUIindex: 0
   branchIndex: 2
 --- !u!222 &3836675722734074211
@@ -4196,6 +4201,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   originPos: {x: 0, y: 0, z: 0}
   branchmanager: {fileID: 0}
+  isPutIn: 0
   branchUIindex: 0
   branchIndex: 0
 --- !u!50 &3836675723929734832
@@ -4331,6 +4337,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   originPos: {x: 0, y: 0, z: 0}
   branchmanager: {fileID: 0}
+  isPutIn: 0
   branchUIindex: 0
   branchIndex: 1
 --- !u!222 &3836675724730985799
